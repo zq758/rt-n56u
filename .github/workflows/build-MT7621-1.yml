@@ -38,8 +38,7 @@ jobs:
       env:
         TNAME: "K2P-5.0 DIR-882-5.0"
       run: |
-        cwd=`/opt/rt-n56u`
-        CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
+        CONFIG_TOOLCHAIN_DIR=/opt/rt-n56u/toolchain-mipsel
         cd trunk
         for m in $TNAME;
         do
